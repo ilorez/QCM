@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Explain the purpose and usage of React's 'concurrent' and 'suspense' features.",
+            "choices": [
+                "Concurrent mode is used for handling concurrent tasks, while suspense is used for asynchronous data fetching.",
+                "Concurrent mode is used for optimizing rendering, while suspense is used for handling errors.",
+                "Concurrent mode is used for server-side rendering, while suspense is used for optimizing rendering performance.",
+                "Concurrent mode and suspense are not real features in React."
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is a 'fiber' in React and how does it relate to the virtual DOM?",
+            "choices": [
+                "A fiber is a data structure used to represent elements in the virtual DOM.",
+                "A fiber is a lightweight thread that helps React manage component rendering.",
+                "A fiber is a method for defining CSS styles in React components.",
+                "A fiber is a virtual DOM tree."
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Explain the concept of 'React reconciliation' and its role in rendering optimization.",
+            "choices": [
+                "Reconciliation is the process of rendering React components asynchronously to improve performance.",
+                "Reconciliation is the process of optimizing rendering by eliminating unused components.",
+                "Reconciliation is the process of updating the actual DOM tree to match the virtual DOM, optimizing rendering by avoiding unnecessary changes.",
+                "Reconciliation is a feature used for handling server-side rendering (SSR) in React."
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is a 'hook' in React, and how does it differ from class component methods?",
+            "choices": [
+                "A hook is a function that allows you to 'hook into' React's lifecycle methods and customize behavior.",
+                "A hook is a component that renders other components.",
+                "Hooks are used for server-side rendering (SSR) in React applications.",
+                "Hooks are an alternative to JSX for defining component structure."
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Explain the principles of the 'Reactive Programming' paradigm and how it relates to React.",
+            "choices": [
+                "Reactive Programming is a paradigm for managing asynchronous data flows, and React follows this paradigm with its state management.",
+                "Reactive Programming is a way of optimizing rendering performance in React applications.",
+                "Reactive Programming is a concept unrelated to React.",
+                "Reactive Programming is a way of handling server-side rendering (SSR) in React applications."
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the role of 'requestIdleCallback' in optimizing performance in React applications?",
+            "choices": [
+                "requestIdleCallback is used for making HTTP requests in React applications.",
+                "requestIdleCallback is a method for handling errors in React applications.",
+                "requestIdleCallback is a feature used to optimize rendering performance by scheduling work during browser idle periods.",
+                "requestIdleCallback is a feature used for server-side rendering (SSR) in React."
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Explain the concept of 'fiber rehydration' and its significance in server-side rendering (SSR) with React.",
+            "choices": [
+                "Fiber rehydration is a process of converting virtual DOM to HTML on the server-side.",
+                "Fiber rehydration is a feature for optimizing rendering performance in React applications.",
+                "Fiber rehydration is a process of converting HTML to virtual DOM on the client-side after server-side rendering.",
+                "Fiber rehydration is not related to React."
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What are the 'time-slicing' and 'lazy-loading' features in React, and how do they impact performance?",
+            "choices": [
+                "Time-slicing and lazy-loading are features for rendering components only when they are in the viewport, improving performance by reducing initial load times.",
+                "Time-slicing and lazy-loading are features for optimizing HTTP requests in React applications.",
+                "Time-slicing and lazy-loading are not real features in React.",
+                "Time-slicing and lazy-loading are features for server-side rendering (SSR) in React."
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Explain the 'concurrent rendering' model in React and how it differs from the traditional 'stack-based' rendering model.",
+            "choices": [
+                "Concurrent rendering is a model for handling server-side rendering (SSR) in React applications, while the traditional model is used for client-side rendering.",
+                "Concurrent rendering is a model that prioritizes high-priority updates and schedules work more efficiently, while the traditional model follows a stack-based approach.",
+                "Concurrent rendering is a model for handling routing in React applications, while the traditional model is used for rendering components.",
+                "Concurrent rendering is not a real concept in React."
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What are 'React Server Components' and how do they impact server-side rendering (SSR) in React?",
+            "choices": [
+                "React Server Components are components that can only be used on the client-side and do not impact SSR.",
+                "React Server Components are components that allow for more efficient server-side rendering by fetching data asynchronously.",
+                "React Server Components are not real components in React.",
+                "React Server Components are components that can only be used on the server-side and do not impact the client-side rendering."
+            ],
+            "correctAnswer": 1
+        }
+    ]
+}

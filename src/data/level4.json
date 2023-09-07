@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "What is server-side rendering (SSR) in React, and why is it beneficial?",
+            "choices": [
+                "Rendering React components on the server before sending them to the client, improving performance and SEO",
+                "Rendering React components on the client for faster load times",
+                "Rendering React components on the server after loading the client-side application",
+                "Rendering static HTML pages"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is a higher-order component (HOC) in React?",
+            "choices": [
+                "A component that is rendered above all other components",
+                "A function that takes a component and returns a new component with enhanced functionality",
+                "A component that is placed higher in the component tree",
+                "A component that is used for handling user authentication"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'shouldComponentUpdate' method in a React class component?",
+            "choices": [
+                "To create animations",
+                "To prevent a component from re-rendering unnecessarily and optimize performance",
+                "To manage component styles",
+                "To fetch data from an API"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the difference between React's 'controlled' and 'uncontrolled' components in forms?",
+            "choices": [
+                "Controlled components use refs, while uncontrolled components do not",
+                "Controlled components use state to manage form input, while uncontrolled components do not rely on state",
+                "Controlled components are always faster than uncontrolled components",
+                "There is no difference; the terms are used interchangeably"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'useLayoutEffect' hook in React?",
+            "choices": [
+                "To perform layout calculations and updates synchronously before the browser paints",
+                "To create animations",
+                "To fetch data from an API",
+                "To manage component state"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What are React fragments used for?",
+            "choices": [
+                "To create reusable components",
+                "To group multiple elements without adding extra nodes to the DOM",
+                "To define the structure of a component",
+                "To create animations"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'memo' function in React?",
+            "choices": [
+                "To memoize expensive calculations and optimize performance",
+                "To create animations",
+                "To manage component styles",
+                "To handle asynchronous operations"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the significance of the 'dangerouslySetInnerHTML' prop in React?",
+            "choices": [
+                "To enable server-side rendering (SSR)",
+                "To allow direct DOM manipulation",
+                "To prevent XSS attacks",
+                "To render HTML content as a string"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'react-router-dom' library in a React application?",
+            "choices": [
+                "To manage component styles",
+                "To create animations",
+                "To handle server-side rendering (SSR)",
+                "To enable client-side routing and navigation"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the key difference between 'useEffect' and 'useLayoutEffect' hooks in React?",
+            "choices": [
+                "There is no difference; they are used interchangeably",
+                "useLayoutEffect runs before the browser paints, while useEffect runs after",
+                "useEffect runs synchronously, while useLayoutEffect runs asynchronously",
+                "useLayoutEffect is deprecated and should not be used"
+            ],
+            "correctAnswer": 1
+        }
+    ]
+}

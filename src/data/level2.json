@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "What is the purpose of the 'props' object in React?",
+            "choices": [
+                "To store component's state",
+                "To manage routing",
+                "To pass data between components",
+                "To define CSS styles"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the key difference between class components and functional components in React?",
+            "choices": [
+                "Class components use class syntax, while functional components use function syntax",
+                "Class components have access to lifecycle methods, while functional components do not",
+                "Class components are faster than functional components",
+                "Functional components can only render static content"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'useEffect' hook in React?",
+            "choices": [
+                "To define CSS styles",
+                "To create animations",
+                "To manage state in functional components",
+                "To handle side effects in functional components"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the Redux library commonly used for in React applications?",
+            "choices": [
+                "Routing",
+                "State management",
+                "Styling",
+                "Server-side rendering"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the React Router library used for?",
+            "choices": [
+                "Managing state",
+                "Handling HTTP requests",
+                "Optimizing rendering",
+                "Navigation and routing in React applications"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the purpose of the 'componentDidUpdate' lifecycle method in a React class component?",
+            "choices": [
+                "To fetch data from an API",
+                "To perform cleanup operations",
+                "To handle updates to component state",
+                "To set initial component state"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is JSX in React?",
+            "choices": [
+                "A build tool for React applications",
+                "A state management library",
+                "A syntax extension for JavaScript",
+                "A CSS preprocessor"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the role of the 'key' prop when rendering lists of components in React?",
+            "choices": [
+                "To provide a unique identifier for each item",
+                "To control the visibility of list items",
+                "To define the order of list items",
+                "To set the component's ID"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the purpose of the 'useState' hook in React?",
+            "choices": [
+                "To create new components",
+                "To handle user authentication",
+                "To fetch data from an API",
+                "To manage and update component state"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "In React, what is the purpose of the 'className' attribute?",
+            "choices": [
+                "To set the component's name",
+                "To define the component's structure",
+                "To specify component state",
+                "To apply CSS styles to a component"
+            ],
+            "correctAnswer": 3
+        }
+    ]
+}

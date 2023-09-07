@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "If programming were a sandwich, what would be the main ingredient in a JavaScript sandwich?",
+            "choices": [
+                "Bread",
+                "Functions",
+                "Variables",
+                "Syntax Errors"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "In TypeScript, how would you declare a variable that holds magical unicorns?",
+            "choices": [
+                "const unicorns: string;",
+                "let unicorns: unicorn;",
+                "var unicorns = 'unicorn';",
+                "declare unicorn;"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What happens when you try to use 'import sunshine' in React?",
+            "choices": [
+                "You get a sunny component",
+                "The code brightens up",
+                "You can't use 'import sunshine'",
+                "Your screen turns yellow"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "In Python, what does 'import coffee' mean?",
+            "choices": [
+                "Imports a coffee maker",
+                "Adds caffeine to your code",
+                "Imports a 'coffee' library",
+                "Raises a 'caffeine not found' error"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Why do programmers use 'print('Hello, World!')' in their code?",
+            "choices": [
+                "To print 'Hello, World!' to the console",
+                "To greet the world",
+                "To start the program",
+                "To summon friendly aliens"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "In TypeScript, what type is 'null' considered to be?",
+            "choices": [
+                "string",
+                "null",
+                "object",
+                "undefined"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What do you get when you run 'console.log([] + []);' in JavaScript?",
+            "choices": [
+                "An empty array",
+                "NaN",
+                "0",
+                "An error"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "If you were to chat with dolphins using a programming language, what would you use?",
+            "choices": [
+                "DolphinScript",
+                "JavaScript",
+                "Python",
+                "Dolphinese"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "Why do programmers follow the 'snake_case' naming convention in Python?",
+            "choices": [
+                "To confuse developers",
+                "To make code more readable",
+                "To avoid bugs",
+                "To attract snakes"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Which programming language is known for its obsession with proper code indentation?",
+            "choices": [
+                "JavaScript",
+                "Python",
+                "C++",
+                "Whitespace"
+            ],
+            "correctAnswer": 1
+        }
+    ]
+}

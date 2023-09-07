@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "What is the purpose of the 'context' in React?",
+            "choices": [
+                "To define the component's structure",
+                "To provide a way to pass data to components without props drilling",
+                "To manage routing",
+                "To create animations"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the primary benefit of using React Router for navigation in a React application?",
+            "choices": [
+                "Improved performance",
+                "Better code organization",
+                "Support for server-side rendering",
+                "Single-page application (SPA) behavior"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "In React, what is the purpose of the 'useReducer' hook?",
+            "choices": [
+                "To manage component state",
+                "To handle side effects in functional components",
+                "To create animations",
+                "To manage complex state logic"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the key difference between React's 'props' and 'state'?",
+            "choices": [
+                "Props are immutable, while state is mutable",
+                "Props can only be used in class components, while state can be used in functional components",
+                "State is passed from parent to child components, while props are managed within a component",
+                "There is no difference, they can be used interchangeably"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the purpose of the 'useMemo' hook in React?",
+            "choices": [
+                "To create animations",
+                "To memoize expensive calculations and optimize performance",
+                "To manage component styles",
+                "To handle asynchronous operations"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "In React, what is the significance of the 'shouldComponentUpdate' method in class components?",
+            "choices": [
+                "It is used to create animations",
+                "It allows components to skip rendering when certain conditions are met, optimizing performance",
+                "It manages component styles",
+                "It fetches data from an API"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is React's Context API primarily used for?",
+            "choices": [
+                "Managing component state",
+                "Storing global configuration settings",
+                "Handling HTTP requests",
+                "Optimizing rendering"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "In React, what is a controlled component?",
+            "choices": [
+                "A component that can't be controlled by the user",
+                "A component that uses the 'useState' hook",
+                "A component that delegates control of its form elements to React state",
+                "A component that has no state"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the purpose of the 'forwardRef' function in React?",
+            "choices": [
+                "To create animations",
+                "To access the DOM directly",
+                "To forward a ref from a parent to a child component",
+                "To define component structure"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the key advantage of using React for server-side rendering (SSR) in web applications?",
+            "choices": [
+                "Improved client-side performance",
+                "Better SEO (Search Engine Optimization)",
+                "Reduced development time",
+                "Support for mobile devices"
+            ],
+            "correctAnswer": 1
+        }
+    ]
+}

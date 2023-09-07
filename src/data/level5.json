@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Explain the concept of 'reconciliation' in React's virtual DOM.",
+            "choices": [
+                "The process of creating a virtual DOM tree",
+                "The process of updating the actual DOM tree to match the virtual DOM",
+                "The process of optimizing rendering using the 'shouldComponentUpdate' method",
+                "The process of generating HTML from JSX"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'Profiler' component in React?",
+            "choices": [
+                "To measure the performance of a React application",
+                "To create animations",
+                "To manage component styles",
+                "To handle asynchronous operations"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "In React, what is the significance of the 'Fragment' component?",
+            "choices": [
+                "To group multiple elements without adding extra nodes to the DOM",
+                "To define the structure of a component",
+                "To enable server-side rendering (SSR)",
+                "To create animations"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is 'memoization' in the context of React performance optimization?",
+            "choices": [
+                "A technique for optimizing HTTP requests",
+                "A way to store component state",
+                "A caching technique to avoid redundant calculations",
+                "A method for routing in React applications"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the purpose of the 'ErrorBoundary' component in React?",
+            "choices": [
+                "To handle server-side rendering (SSR) errors",
+                "To manage component styles",
+                "To create animations",
+                "To catch and handle errors in child components"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What are 'portals' in React and what are they commonly used for?",
+            "choices": [
+                "Portals are used for asynchronous data fetching",
+                "Portals are used for creating modals and tooltips that can be rendered outside of the normal DOM hierarchy",
+                "Portals are used for server-side rendering (SSR)",
+                "Portals are used for managing routing in React applications"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "What is the purpose of the 'Suspense' component in React?",
+            "choices": [
+                "To manage component styles",
+                "To create animations",
+                "To handle asynchronous operations with better loading states",
+                "To enable server-side rendering (SSR)"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the 'Concurrent Mode' in React, and why is it significant?",
+            "choices": [
+                "Concurrent Mode is a mode for creating concurrent tasks in React applications",
+                "Concurrent Mode is a way to perform server-side rendering (SSR)",
+                "Concurrent Mode is a mode for handling HTTP requests",
+                "Concurrent Mode is a mode for optimizing rendering and user experience, especially in high-priority updates"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What is the 'strict mode' in React, and how does it impact development?",
+            "choices": [
+                "Strict mode enforces strict code formatting rules",
+                "Strict mode is a mode for faster component rendering",
+                "Strict mode is a development mode that detects potential problems in the application and logs warnings to the console",
+                "Strict mode is a mode for server-side rendering (SSR)"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the primary purpose of the 'render props' pattern in React?",
+            "choices": [
+                "To optimize rendering performance",
+                "To share component styles across the application",
+                "To handle asynchronous operations",
+                "To allow components to share code and behavior through a prop whose value is a function"
+            ],
+            "correctAnswer": 3
+        }
+    ]
+}
