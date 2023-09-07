@@ -118,7 +118,7 @@ export default function QCM() {
   return (
 
     <main>
-      {/* <button onClick={incrementQuestionNum}></button> */}
+
       <ParentController />
     </main>
   )
