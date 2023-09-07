@@ -48,8 +48,8 @@ function QcmHeader() {
   <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H8.51724C9.06953 0 9.51724 0.447715 9.51724 1C9.51724 1.55228 9.06953 2 8.51724 2H5.75862C3.68279 2 2 3.68279 2 5.75862V17.2414C2 19.3172 3.68279 21 5.75862 21H8.51724C9.06953 21 9.51724 21.4477 9.51724 22C9.51724 22.5523 9.06953 23 8.51724 23H2C0.895431 23 0 22.1046 0 21V2C0 0.895431 0.895431 0 2 0ZM18.9485 10.3963L12.5845 4.03238C12.194 3.64186 11.5608 3.64186 11.1703 4.03238C10.7798 4.4229 10.7798 5.05607 11.1703 5.44659C12.8888 7.16509 11.6717 10.1034 9.24138 10.1034H5.75862C5.20634 10.1034 4.75862 10.5512 4.75862 11.1034C4.75862 11.6557 5.20634 12.1034 5.75862 12.1034H9.24138C11.6717 12.1034 12.8888 15.0418 11.1703 16.7603C10.7798 17.1508 10.7798 17.784 11.1703 18.1745C11.5608 18.565 12.194 18.565 12.5845 18.1745L18.9485 11.8106C19.339 11.42 19.339 10.7869 18.9485 10.3963Z" fill="white"/>
   </svg>`;
   return (
-    <div key='header'>
-      {questionNum >= 0 && <div key='questionsProgresse'>{questionNum + 1}/{questions.length}</div>}
+    <div key='header' className='headerPageAction'>
+      {questionNum >= 0 && <div key='questionsProgresse' >{questionNum + 1}/{questions.length}</div>}
       <div key='quiteNutton' className='quiteNutton'><Link to="/"><button className='quiteNuttonButton'><div dangerouslySetInnerHTML={{ __html: quiteIcon }} /></button></Link></div>
     </div>
   )
