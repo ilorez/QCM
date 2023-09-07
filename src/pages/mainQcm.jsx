@@ -1,12 +1,17 @@
 
 import './mainQcm.css'
 import React from 'react'
-import { useState } from 'react'
+import { useState, getDefaultState } from 'react'
 import { Link } from 'react-router-dom'
 
 // zustand 
 import useStore from '../store'
 
+// Function to reset the state to its default values
+const resetStateToDefault = () => {
+  const defaultState = getDefaultState();
+  store.setState(defaultState);
+};
 
 function QcmChoice(text, handleClick, iconSrc) {
   return (
@@ -95,25 +100,51 @@ function QcmHeader() {
   </svg>`;
   let proValue = (questionNum) + "/" + questions.length
   let progressVal = (questionNum) * 10
-  console.log(questionNum)
-  if (questionNum < 0) {
-    proValue = "Done"
-    progressVal = 100
-  }
+
   return (
     <div key='header' className='flex justify-between mb-10 align-baseline '>
-      <ProgressCircle value={proValue} color1="gray" color2="#0FC5F2" progress={progressVal} size={40} borderSize={5} fontSize="11px" />
-      <div key='quiteNutton' className='flex justify-center align-middle items-baseline'><Link to="/" className='flex self-center '><button className='bg-incorrect py-1 px-2 rounded-md hover:scale-105 hover:bg-red-600'><div dangerouslySetInnerHTML={{ __html: quiteIcon }} /></button></Link></div>
+      {questionNum >= 0 && <ProgressCircle value={proValue} color1="gray" color2="#0FC5F2" progress={progressVal} size={40} borderSize={5} fontSize="11px" />}
+      <div></div>
+      <div key='quiteNutton' className='flex justify-center align-middle items-baseline'><Link to='/' className='flex self-center '><button className='bg-incorrect py-1 px-2 rounded-md hover:scale-105 hover:bg-red-600'><div dangerouslySetInnerHTML={{ __html: quiteIcon }} /></button></Link></div>
     </div>
   )
 }
+
+// this component is showed or called when use complete all questions
+function Result() {
+
+  const { correctnessAnswers } = useStore();
+  const correct = correctnessAnswers.filter((answer) => answer).length;
+  const inCorrect = correctnessAnswers.length - correct
+
+
+  return (
+    <div>
+      <div key="resultMessageWithFace">
+        <h2>You're learning!</h2>
+        <div>/img/</div>
+      </div>
+      <div key="resultSection">
+        <div key="circleProgress"></div>
+        <div key="ansawerCorrectenss">
+          <p>Correct: <span>{correct}</span></p>
+          <p>Incorrect: <span>{inCorrect}</span></p>
+        </div>
+      </div>
+      <div key='startNewQcmBtn'>
+        <Link to="/"><button >/icon/ Start new QCM /icon/</button></Link>
+      </div>
+    </div>
+  )
+}
+
 function QcmArea() {
   const { getQuestion, setCorrectness, incrementQuestionNum, questionNum } = useStore();
   const [focused, setFocused] = useState(null) //focused = index of choice that focused or clicked one time
   // is my store state if questionNum = -1 that mean we complete all question
   if (questionNum === -1) {
     return (
-      <h1>Loading...</h1>
+      <Result />
     )
   }
   const handleClick = (index) => {
