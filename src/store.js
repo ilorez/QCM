@@ -1,22 +1,25 @@
 import { create } from 'zustand'
-const Ques = [
-    {
-        "question": "What is the core building block of a React application?",
-        "choices": [
-            "Component",
-            "Module",
-            "Element",
-            "Function"
-        ],
-        "correctAnswer": 0
-    }
-]
 const useStore = create((set) => ({
-    questions: Ques,
+    questions: [
+        {
+            "question": "What is the core building block of a React application?",
+            "choices": [
+                "Component",
+                "Module",
+                "Element",
+                "Function"
+            ],
+            "correctAnswer": 0
+        }
+    ],
     correctnessAnswers: [],
     questionNum: 0,
     setQuestions: (data) => set(() => {
-        return { questions: data }
+        return {
+            questionNum: 0,
+            correctnessAnswers: [],
+            questions: data,
+        }
     }),
     incrementQuestionNum: () => set((state) => {
         const qN = useStore.getState().questionNum
