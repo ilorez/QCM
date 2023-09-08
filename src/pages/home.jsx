@@ -36,9 +36,9 @@ function Home() {
 
     const links = paths.map((link, index) => {
         return (
-            <div key={"level" + index} className='last:col-span-2   '>
+            <div key={"level" + index} className='last:col-span-1 sm:last:col-span-2 '>
                 <Link to="/QCM" onClick={() => fetchData(link[0])}>
-                    <button className={' px-4 py-1.5 rounded-lg w-full flex justify-between items-center gap-2 shadow-md hover:bg-blue-100 ' + difficultyLevels[index].textColor + " " + difficultyLevels[index].bgColor}>Level {index + 1} <div className='flex justify-between items-center gap-4'>({link[1] + difficultyLevels[index].emoji})<div dangerouslySetInnerHTML={{ __html: nextIcon }} /></div></button>
+                    <button className={' px-4 py-1.5 rounded-lg w-full flex flex-row justify-between items-center gap-2 shadow-md hover:bg-blue-100 overflow-hidden ' + difficultyLevels[index].textColor + " " + difficultyLevels[index].bgColor}>Level {index + 1} <div className='flex justify-between items-center gap-4'>({link[1] + difficultyLevels[index].emoji})<div dangerouslySetInnerHTML={{ __html: nextIcon }} /></div></button>
                 </Link>
             </div>
         )
@@ -49,7 +49,7 @@ function Home() {
                 <h1 className='text-blue-color mb-5  font-bold  text-2xl'>Welcome to React QCM!</h1>
                 <p className='text-gray-600 pl-6'>Explore your React knowledge from easy to super hard! Test yourself with a variety of React questions.</p>
             </div>
-            <div className='grid grid-cols-2 gap-4 '>
+            <div className='grid  sm:grid-cols-2 grid-cols-1 gap-4  '>
                 {/* <h3 className='text-gray-700 text-lg  font-bold  '>React QCM Levels</h3> */}
                 {links}
             </div>

@@ -111,8 +111,8 @@ function Result() {
 
 
     return (
-        <div className='flex flex-col gap-20'>
-            <div className='flex flex-col  bg-light-white py-3 px-4 pb-20 shadow-md rounded-lg'>
+        <div className='flex flex-col gap-20 place-items-center'>
+            <div className='flex flex-col  bg-light-white py-3 px-4 pb-20 shadow-md rounded-lg  w-full'>
                 <div key="resultMessageWithFace" className='flex justify-between text-gray-800 text-2xl '>
                     <h2>{message}</h2>
                     <div className='bg-yellow-100 border-2 border-yellow-200 rounded-xl p-0.5'><span role="img" aria-label="Random Emoji">
@@ -134,7 +134,7 @@ function Result() {
                     <Link to="/" ><button className='flex items-center gap-3 bg-primary-one py-2 px-6 shadow-md rounded-md hover:bg-gray-100 hover:scale-105 mt-20 text-blue-color'><div dangerouslySetInnerHTML={{ __html: startIcon }} /> Start new QCM <div dangerouslySetInnerHTML={{ __html: nextIcon }} /></button></Link>
                 </div>
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 '>
                 {cards}
             </div>
         </div >

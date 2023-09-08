@@ -109,7 +109,7 @@ function QcmHeader() {
   let progressVal = (questionNum) * 10
 
   return (
-    <div key='header' className='flex justify-between mb-10 align-baseline '>
+    <div key='header' className='flex justify-between mb-10 align-baseline w-full '>
       {questionNum >= 0 && <ProgressCircle value={proValue} color1="#ccc" color2="#0FC5F2" progress={progressVal} size={40} borderSize={5} fontSize="11px" />}
       <div></div>
       <div key='quiteNutton' className='flex justify-center align-middle items-baseline'><Link to='/' className='flex self-center '><button className='bg-incorrect py-1 px-2 rounded-md hover:scale-105 hover:bg-red-600'><div dangerouslySetInnerHTML={{ __html: quiteIcon }} /></button></Link></div>
@@ -139,14 +139,14 @@ function QcmArea() {
   }
   const choices = getQuestion(questionNum).choices.map((choice, index) => {
     return (
-      <li key={"choice_" + { questionNum } + "_" + index}><button onClick={() => handleClick(index)} className='bg-primary-one p-2 rounded-md  text-gray-700 shadow-md 
+      <li key={"choice_" + { questionNum } + "_" + index} ><button onClick={() => handleClick(index)} className=' bg-primary-one p-2 rounded-md  text-gray-700 shadow-md 
       focus:border-2 focus:bg-sky-50 focus:border-sky-400 focus:outline-none  
       transition duration-100 ease-in-out delay-100
       hover:bg-gray-100 ' >{choice}</button></li>
     )
   })
   return (
-    <div className='flex flex-col bg-light-white pb-20 pt-4 rounded-lg shadow-md px-4'>
+    <div className='flex flex-col bg-light-white pb-20 pt-4 rounded-lg shadow-md px-4 w-full'>
       <QcmActions />
       <div key='question' className='my-16 text-lg text-gray-900'>{getQuestion(questionNum).question}</div>
       <div key='select_choices'>
@@ -163,7 +163,7 @@ function QcmArea() {
 function ParentController() {
 
   return (
-    <div className='flex flex-col justify-center align-middle'>
+    <div className='flex flex-col justify-center  max-w-2xl w-full place-items-center'>
       <QcmHeader />
       <QcmArea />
     </div >
@@ -174,7 +174,7 @@ function ParentController() {
 export default function QCM() {
 
   return (
-    <main className='flex flex-col text-primary-two '>
+    <main className='flex flex-col text-primary-two place-items-center'>
       <ParentController />
     </main>
   )
