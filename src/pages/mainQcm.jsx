@@ -8,7 +8,28 @@ import useStore from '../store'
 import Result from './components/Result'
 import ProgressCircle from './components/progressCircle'
 
-function speakText(text) {
+
+function speakText(text, voicesToTry = [
+  // Female voices
+  'Google UK English Female',
+  'Microsoft David Desktop - English (United States)',
+  'Microsoft Zira Desktop - English (United States)',
+  'Samantha',
+  'Google US English',
+  'Microsoft Eva Mobile - English (United States)',
+  'Google UK English Female (x-af-x-sfg#male_1-local)',
+
+
+  // Male voices (add more if needed)
+  'Google UK English Male',
+  'Microsoft George Desktop - English (United States)',
+  'Microsoft Mark Mobile - English (United States)',
+  'English (Great Britain)+Robert',
+  'English (America)+Andy',
+  'Google UK English Female (en-GB-WLS)',
+  'English (West Midlands)+female5',
+
+]) {
   // Check if the Web Speech API is supported
   if ('speechSynthesis' in window) {
     const synth = window.speechSynthesis;
@@ -16,8 +37,25 @@ function speakText(text) {
     // Create a SpeechSynthesisUtterance object
     const utterance = new SpeechSynthesisUtterance(text);
 
-    // Use the default voice (you can specify a voice if needed)
-    utterance.voice = synth.getVoices()[0];
+    // Find the first available voice from the list
+    let selectedVoice = null;
+    const voices = synth.getVoices();
+    for (const voiceName of voicesToTry) {
+      const voice = voices.find((v) => v.name === voiceName);
+      if (voice) {
+        selectedVoice = voice;
+        break;
+      }
+    }
+
+    if (selectedVoice) {
+      utterance.voice = selectedVoice;
+    } else {
+      console.warn('No suitable voice found. Using browser default voice.');
+    }
+
+    // Adjust the rate (1.0 is the normal rate, adjust as needed)
+    utterance.rate = 0.7; // You can adjust the rate as needed
 
     // Speak the text
     synth.speak(utterance);
@@ -28,13 +66,16 @@ function speakText(text) {
 
 
 
+
+
+
 function QcmActions() {
   const { getQuestion, setCorrectness, incrementQuestionNum, questionNum } = useStore();
   const readQuestionAndChoices = (questionIndex) => {
     const myquestion = getQuestion(questionIndex);
-    let fullText = "The question is, " + myquestion.question + ". Choices: "
+    let fullText = "Question, " + myquestion.question + ", Choices: "
     myquestion.choices.forEach((choice, index) => {
-      fullText += "Number " + (index + 1) + ", " + choice + "."
+      fullText += " Number " + (index + 1) + ", " + choice + ","
     });
     console.log(fullText)
     speakText(fullText)

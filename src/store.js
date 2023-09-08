@@ -14,6 +14,7 @@ const useStore = create((set) => ({
     ],
     correctnessAnswers: [],
     questionNum: 0,
+    userAnsawers: [],
     setQuestions: (data) => set(() => {
         return {
             questionNum: 0,
@@ -35,8 +36,13 @@ const useStore = create((set) => ({
     },
     setCorrectness: (index, answer) => set((state) => {
         const updateCorrectnessAnswers = [...state.correctnessAnswers];
+        const updateUserAnsawers = [...state.userAnsawers];
         updateCorrectnessAnswers[index] = useStore.getState().getQuestion(index).correctAnswer === answer ? 1 : 0;
-        return { correctnessAnswers: updateCorrectnessAnswers }
+        updateUserAnsawers[index] = answer;
+        return {
+            correctnessAnswers: updateCorrectnessAnswers,
+            userAnsawers: updateUserAnsawers
+        }
     }),
 }));
 export default useStore;
