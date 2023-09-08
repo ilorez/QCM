@@ -2,10 +2,21 @@
 
 Welcome to the React QCM (Multiple Choice Questions) App! This application is designed to provide users with a platform to select a level, attempt a set of questions, and receive results and correctness feedback. It's built with Vite, Zustand, Tailwind CSS, and React Router.
 
-![App Screenshot 1](./src/assets/screenshot_1.png)
-![App Screenshot 2](./src/assets/screenshot_2.png)
-![App Screenshot 3](./src/assets/screenshot_3.png)
-![App Screenshot 4](./src/assets/screenshot_4.png)
+- Screenshot 1
+  <br/>
+  ![App Screenshot 1](./src/assets/screenshot_1.png)
+  <br/>
+- Screenshot 2
+  <br>
+  ![App Screenshot 2](./src/assets/screenshot_2.png)
+  <br/>
+- Screenshot 2
+  <br/>
+  ![App Screenshot 3](./src/assets/screenshot_3.png)
+  <br/>
+- Screenshot 3
+  <br/>
+  ![App Screenshot 4](./src/assets/screenshot_4.png)
 
 ## Features
 
