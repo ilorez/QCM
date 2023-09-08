@@ -110,7 +110,7 @@ function QcmHeader() {
 
   return (
     <div key='header' className='flex justify-between mb-10 align-baseline '>
-      {questionNum >= 0 && <ProgressCircle value={proValue} color1="gray" color2="#0FC5F2" progress={progressVal} size={40} borderSize={5} fontSize="11px" />}
+      {questionNum >= 0 && <ProgressCircle value={proValue} color1="#ccc" color2="#0FC5F2" progress={progressVal} size={40} borderSize={5} fontSize="11px" />}
       <div></div>
       <div key='quiteNutton' className='flex justify-center align-middle items-baseline'><Link to='/' className='flex self-center '><button className='bg-incorrect py-1 px-2 rounded-md hover:scale-105 hover:bg-red-600'><div dangerouslySetInnerHTML={{ __html: quiteIcon }} /></button></Link></div>
     </div>
