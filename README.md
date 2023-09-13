@@ -20,7 +20,7 @@ Welcome to the React QCM (Multiple Choice Questions) App! This application is de
 
 ## Figma Design
 
-You can view the Figma design for this project by [clicking here](https://www.figma.com/file/iSEQYtNPSZCu04HOGNeejB/QCM-app?type=design&mode=design&t=Yf7DRwhJmB6XV4YA-1).
+You can access the introductory Figma design for this project by [clicking here](https://www.figma.com/file/iSEQYtNPSZCu04HOGNeejB/QCM-app?type=design&mode=design&t=Yf7DRwhJmB6XV4YA-1).
 
 ## Features
 
