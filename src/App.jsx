@@ -9,7 +9,7 @@ function App() {
       <div>
         <Routes>
           <Route index element={<Home />} />
-          <Route path='QCM' element={<QCM />} />
+          <Route path='ilQCM' element={<QCM />} />
         </Routes>
       </div>
     </BrowserRouter >
