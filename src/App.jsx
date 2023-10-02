@@ -8,8 +8,8 @@ function App() {
     <BrowserRouter >
       <div>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='ilQCM' element={<QCM />} />
+          <Route path='QCM/' element={<Home />} />
+          <Route path='QCM/ilQCM' element={<QCM />} />
         </Routes>
       </div>
     </BrowserRouter >
