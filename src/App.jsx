@@ -5,7 +5,7 @@ import QCM from './pages/mainQcm'
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL} >
+    <BrowserRouter  >
       <div>
         <Routes>
           <Route path='QCM/' element={<Home />} />
