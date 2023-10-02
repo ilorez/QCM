@@ -22,7 +22,7 @@ function Home() {
     const nextIcon = `<svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6061 9.89832L9.60912 9.90129L11.0326 8.49643L2.42348 0L0.999978 1.40486L8.1826 8.49345L0.576477 16L1.99998 17.4049L9.6061 9.89832Z" fill="#808080"/>
   </svg>`;
-    const paths = [['/src/data/level1.json', "Easy"], ['/src/data/level2.json', "Intermediate"], ['/src/data/level3.json', "Moderate"], ['/src/data/level4.json', "Challenging"], ['/src/data/level5.json', "Very Hard"], ['/src/data/levelImpossible.json', "Impossible"], ['/src/data/levelNotSense.json', "Not sens"]]
+    const paths = [['./data/level1.json', "Easy"], ['./data/level2.json', "Intermediate"], ['./data/level3.json', "Moderate"], ['./data/level4.json', "Challenging"], ['./data/level5.json', "Very Hard"], ['./data/levelImpossible.json', "Impossible"], ['./data/levelNotSense.json', "Not sens"]]
     const difficultyLevels = [
         { bgColor: 'bg-green-200', textColor: 'text-green-800', emoji: '🌟' },
         { bgColor: 'bg-blue-200', textColor: 'text-blue-800', emoji: '🔥' },
