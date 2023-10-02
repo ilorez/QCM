@@ -102,9 +102,8 @@ function Result() {
 
     const cards = correctnessAnswers.map((value, index) => {
         return (
-            <div>
-
-                <QuestionCard numOfQuestion={index} isCorrect={value} />
+            <div key={"card-" + index}>
+                <QuestionCard isCorrect={value} numOfQuestion={index} />
             </div>
         )
     })
