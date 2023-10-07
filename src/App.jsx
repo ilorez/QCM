@@ -5,14 +5,11 @@ import QCM from './pages/mainQcm'
 
 function App() {
   return (
-    <BrowserRouter  >
+    <BrowserRouter basename='/QCM'>
       <div>
-        <Routes>
-          <Route path='QCM/' element={<Home />} />
+        <Routes >
           <Route path='/' element={<Home />} />
-          <Route path='QCM/ilQCM' element={<QCM />} />
           <Route path='/ilQCM' element={<QCM />} />
-          <Route path='ilQCM' element={<QCM />} />
         </Routes>
       </div>
     </BrowserRouter >
