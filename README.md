@@ -37,7 +37,7 @@ To run this app locally, follow these steps:
 1. Clone this repository to your local machine:
 
 ```
-https://github.com/Z-Najdaoui/QCM.git
+git clone https://github.com/ilorez/QCM.git
 ```
 
 2. Navigate to the project directory:
@@ -58,7 +58,7 @@ npm install
 npm run dev
 ```
 
-5. Open your browser and access the app at `http://localhost:port`.
+5. Open your browser and access the app at `http://localhost:<port>`.
 
 ## Technologies Used
 
